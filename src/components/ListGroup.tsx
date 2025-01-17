@@ -1,6 +1,11 @@
-import { useState } from "react";
 
-function ListGroup() {
+// {items: [], headings: strings}
+
+interface Props {
+  items: string[];
+  headings: string[];
+}
+function ListGroup(props: Props) {
   let items = ["Item 1", "Item 2", "Item 3", "Item 4"];
 //   Hook 
   const [selectedIndex, setSelectedIndex] = useState(-1);
